@@ -5,13 +5,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Autoplay } from 'swiper/modules';
 
-import image1 from "../assets/Product1.jpeg"
-import image2 from "../assets/Product2.jpg"
-import image3 from "../assets/Product3.jpg"
-import image4 from "../assets/Product4.jpg"
-import image5 from "../assets/Product5.jpg"
-import image6 from "../assets/Product6.jpg"
-import image7 from "../assets/Product7.jpg"
+import image1 from "../assets/product1.jpeg"
+import image2 from "../assets/product2.jpg"
+import image3 from "../assets/product3.jpg"
+import image4 from "../assets/product4.jpg"
+import image5 from "../assets/product5.jpg"
+import image6 from "../assets/product6.jpg"
+import image7 from "../assets/product7.jpg"
 import ProductCard from '../components/ProductCard/ProductCard';
 import ProductModal from '../components/ProductModal/ProductModal';
 
