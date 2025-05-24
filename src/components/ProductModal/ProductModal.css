@@ -1,0 +1,122 @@
+.product-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  width: 90%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.product-modal__image-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-modal__image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.product-modal__close-button {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s ease;
+}
+
+.product-modal__close-button:hover {
+  background: #eaeaea;
+}
+
+.product-modal__content {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-modal__title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.product-modal__details {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+
+.product-modal__price {
+  color: #0066b3;
+  font-weight: bold;
+}
+
+.product-modal__quantity {
+  color: #666;
+}
+
+.product-modal__description {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.product-modal__button {
+  background-color: #0066b3;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.product-modal__button:hover {
+  background-color: #004f8b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-modal {
+    flex-direction: column;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .product-modal__image {
+    max-height: 300px;
+  }
+
+  .product-modal__content {
+    padding: 16px;
+  }
+}
